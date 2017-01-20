@@ -1,8 +1,48 @@
 body {
-    font-family: Comic Sans, Comic Sans MS, cursive;
-    font-size: 16px;
+    font-family: Toms handwriting, Comic Sans, Comic Sans MS, cursive;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 .content {
-    background: linear-gradient(to bottom, #1B7BCF 1%, #EDEDED 99%);
+    background: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0.3, #1B7BCF), color-stop(0.7, #EDEDED));
+    background: -webkit-linear-gradient(#1B7BCF 30%, #EDEDED 70%);
+    background: -moz-linear-gradient(#1B7BCF 30%, #EDEDED 70%);
+    background: -o-linear-gradient(#1B7BCF 30%, #EDEDED 70%);
+    background: linear-gradient(#1B7BCF 30%, #EDEDED 70%);
+}
+.home { 
+    background-image: url(/src/IMG_0603_768-.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    
+}
+ul li { 
+    display: inline;
+    margin-right: 15px; 
+    padding: 3px;
+    text-align: center;
+    
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.contacts { 
+    background-image: url(/src/IMG_0604_1280.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+img {
+    height: 320px;
+    width: 360px;
+    margin:50px;
 }
