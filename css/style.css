@@ -11,12 +11,7 @@ body {
     background: -o-linear-gradient(#1B7BCF 30%, #EDEDED 70%);
     background: linear-gradient(#1B7BCF 30%, #EDEDED 70%);
 }
-.MP {
-    font-size: 40px;
-    position:relative;
-    left:700px;
-    bottom:100px;
-}
+
 .home { 
     background-image: url(../src/IMG_0603_768-.jpg);
     height: 1000px;
@@ -51,5 +46,5 @@ h2 {
 img {
     height: 320px;
     width: 360px;
-    margin:50px;
+    margin:70px;
 }
