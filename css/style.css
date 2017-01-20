@@ -12,7 +12,7 @@ body {
     background: linear-gradient(#1B7BCF 30%, #EDEDED 70%);
 }
 .home { 
-    background-image: url(/src/IMG_0603_768-.jpg);
+    background-image: url(../src/IMG_0603_768-.jpg);
     height: 1000px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -31,7 +31,7 @@ a {
     color: #fff;
 }
 .contacts { 
-    background-image: url(/src/IMG_0604_1280.jpg);
+    background-image: url(../src/IMG_0604_1280.jpg);
     height: 1000px;
     background-repeat: no-repeat;
     background-size: 100%;
