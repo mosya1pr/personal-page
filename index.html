@@ -1,126 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Personal Portfolio MP</title>
-        <link href="css/reset.css" rel="stylesheet">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Personal  MP Page </title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
         <link href="css/style.css" rel="stylesheet">
-        <style>
-            @font-face {
-                font-family: Toms handwriting;
-                src: url(fonts/tomhand.ttf);
-            }
-        </style>
+        <link href="css/m_and_p.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
-        <div class="content">
-            <div class="home" id="home">
-                <div class="logo">
-                    <p>MP</p>
+        <div class="navbar navbar-fixed-top m-n">
+            <div class="container">
+                <div class="navbar-header">
+                    <span class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="#">MP</a>
                 </div>
-                <div class="nav">
-                    <ul>
+                <div class="collapse navbar-collapse">
+                    <ul id="menu" class="nav navbar-nav">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#galery">Gallery</a></li>
                         <li><a href="#contacs">Contacts</a></li>
                     </ul>
-                </div>
-                <div class="social">                    
-                    <ul>
-                        <li><a href="#"><i class="skype"></i></a></li>
-                        <li><a href="#"><i class="fb"></i></a></li>
-                        <li><a href="#"><i class="ln"></i></a></li>
-                        <li><a href="#"><i class="instagram"></i></a></li>
-                        <li><a href="#"><i class="tw"></i></a></li>
+                    <ul class="nav navbar-nav navbar-right socials">
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
                     </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div id="fullpage" class="container content">
+
+            <div id="home" class="row top-block responsive-block">
+                <div class="col-lg-8">
+
                 </div>
-                <div class="home_content">
+                <div class="col-lg-4 col-md-12 home_content">
+                    <!--<div class="home_content">-->
                     <h1 class="">Myroslava Pryadun</h1>
                     <br>
                     <p class="p1">I am Web UI developer from Lviv. I use HTML5/ CSS3/ JavaScript/ JQuery latest technologies.</p>
                     <p class="p2">I am constantly improving my technical and practical knowledge.</p>
-                    <a class="btn_about" href="about">About me</a>
+                    <!--</div>-->
                 </div>
+                <a class="btn_about" href="about">About me</a>
             </div>
-            <div class="about" id="about">
-                <h2>About me</h2>
-                <div class="about_content">
-                    <div class="width_full">
-                        <div class="width_s">
-                            <h3>Education</h3>
-                        </div>
-                        <div class="width_l">
-                            <p>
-                                Lviv National Polytechnic University<br>
-                                Bachelor of Arts in Philology<br>
-                                2008 - 2012<br>
-                                Lviv National Polytechnic University<br>
-                                Master of Arts in Applied Linguistics<br>
-                                2012 - 2014<br>
-                                Lviv National Polytechnic University<br>
-                                Master of Arts in Credit and Finance<br>
-                                2012 - 2014<br>
-                            </p>
-                        </div>
+
+            <div id="about" class="row about-block responsive-block">
+                <h2 class="block-name">About me</h2>
+                <div class="col-lg-12 m-t-lg">
+                    <div class="col-lg-6 col-md-4 p-b-lg">Education</div>
+                    <div class="col-lg-6 col-md-8">
+                        <p>
+                            Lviv National Polytechnic University<br>
+                            Bachelor of Arts in Philology<br>
+                            2008 - 2012<br>
+                            Lviv National Polytechnic University<br>
+                            Master of Arts in Applied Linguistics<br>
+                            2012 - 2014<br>
+                            Lviv National Polytechnic University<br>
+                            Master of Arts in Credit and Finance<br>
+                            2012 - 2014<br>
+                        </p>
                     </div>
-                    <div class="width_full">
-                        <div class="width_s">
-                            <h3>Languages</h3>
-                        </div>
-                        <div class="width_l">
-                            <p>
-                                English (fluent)<br>
-                                German (pre-intermediate)<br>
-                                Russian (fluent)<br>
-                                Polish (beginner)<br>
-                            </p>
-                        </div>
+                </div>
+                <div class="col-lg-12 m-t-lg">
+                    <div class="col-lg-6 col-md-4 p-b-lg">Languages</div>
+                    <div class="col-lg-6 col-md-8">
+                        <p>
+                            English (fluent)<br>
+                            German (pre-intermediate)<br>
+                            Russian (fluent)<br>
+                            Polish (beginner)<br>
+                        </p>
                     </div>
-                    <div class="width_full">
-                        <div class="width_s">
-                            <h3>Skills</h3>
-                        </div>
-                        <div class="width_l">
-                            <p>
-                                I am creating projects using HTML5/CSS/JavaScript/JQuery technologies. <br> 
-                                I am an extremely hard-working, responsible and mature worker, who enjoys working in a team as well as autonomously.<br> 
-                                I am constantly improving my technical skills and practical knowledge. <br> 
-                                I am quick to grasp new ideas and concepts, persistent in achieving goals, straight-forward and able to work on my own initiative.
-                            </p>
-                        </div>
+                </div>
+                <div class="col-lg-12 m-t-lg">
+                    <div class="col-lg-6 col-md-4 p-b-lg">Skills</div>
+                    <div class="col-lg-6 col-md-8">
+                        <p>
+                            I am creating projects using HTML5/ CSS/ JavaScript/ JQuery technologies. <br>
+                            I am an extremely hard-working, responsible and mature worker, who enjoys working in a team as well as autonomously.<br>
+                            I am constantly improving my technical skills and practical knowledge. <br>
+                            I am quick to grasp new ideas and concepts, persistent in achieving goals, straight-forward and able to work on my own initiative.
+                        </p>
                     </div>
                 </div>
             </div>
-            <h2 class="gallery_header">Gallery</h2>
-            <div class="gallery" id="gallery">
-                <div class="gallery_content">
-                    <img src="src/1.jpg" alt="1.jpg">
-                    <img src="src/2.jpg" alt="2.jpg">
-                    <img src="src/3.jpg" alt="3.jpg">
-                    <img src="src/4.jpg" alt="4.jpg">
-                    <img src="src/5.jpg" alt="5.jpg">
-                    <img src="src/6.jpg" alt="6.jpg">
-                </div>
+
+            <div id="galery" class="row galery-block responsive-block">
+                <h2 class="block-name">Gallery</h2>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/1.jpg" alt="1.jpg"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/2.jpg" alt="2.jpg"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/3.jpg" alt="3.jpg"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/4.jpg" alt="4.jpg"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/5.jpg" alt="5.jpg"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/6.jpg" alt="6.jpg"></div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/1.jpg" alt="1.jpg"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/2.jpg" alt="2.jpg"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/3.jpg" alt="3.jpg"></div>
             </div>
-            <div class="contacts" id="contacts">
-                <h2 class="contact_header">Contact</h2>
-                <div class="left">
+
+            <div id="contacts" class="row contacts-block responsive-block">
+                <h2 class="block-name">Contacts</h2>
+                <div class="col-lg-4">
                     <p>In order to get in touch please Fill the form bellow. Thanks.</p>
                     <form method="post">
-                        <input type="text" name="username">
-                        <input type="email" name="email">
-                        <textarea name="message"></textarea>
-                        <button type="submit">Send</button>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="username">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default" type="submit">Send</button>
+                        </div>
                     </form>
                 </div>
-                <div class="right">
-                    <a href="#"><i class="phone"></i> +380979147389</a>
-                    <a href="#"><i class="skype"></i> mosicka_lviv</a>
-                    <a href="https://www.facebook.com/myroslava.pryadun"><i class="fb"></i> fb/myroslava.pryadun</a>
-                    <a href="mailto:mosicka_rudky@ukr.net"><i class="mail"></i> mosicka_rudky@ukr.net</a>
+                <div class="col-lg-8">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-phone-square"></i> +380979147389</a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i> mosicka_lviv</a></li>
+                        <li><a href="https://www.facebook.com/myroslava.pryadun"><i class="fa fa-facebook-square"></i> fb/myroslava.pryadun</a></li>
+                        <li><a href="mailto:mosicka_rudky@ukr.net"><i class="fa fa-envelope"></i> mosicka_rudky@ukr.net</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+
+        </div><!-- /.container -->
+        <!-- script references -->
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
