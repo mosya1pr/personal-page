@@ -28,7 +28,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#galery">Gallery</a></li>
-                        <li><a href="#contacs">Contacts</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right socials">
                         <li><a href="#"><i class="fa fa-skype"></i></a></li>
@@ -44,18 +44,15 @@
         <div id="fullpage" class="container content">
 
             <div id="home" class="row top-block responsive-block">
-                <div class="col-lg-8">
-
+                <div class="background-efect">
+                    <div class="col-lg-4 col-md-12 col-lg-offset-8 home_content">
+                        <h1 class="page-title elegantshadow">Myroslava Pryadun</h1>
+                        <br>
+                        <p class="p1 m-t-xl">I am Web UI developer from Lviv. I use HTML5/ CSS3/ JavaScript/ JQuery latest technologies.</p>
+                        <p class="p2">I am constantly improving my technical and practical knowledge.</p>
+                    </div>
+                    <a class="btn btn_about efect" href="#about"><span data-hover="About me">About me</span></a>
                 </div>
-                <div class="col-lg-4 col-md-12 home_content">
-                    <!--<div class="home_content">-->
-                    <h1 class="">Myroslava Pryadun</h1>
-                    <br>
-                    <p class="p1">I am Web UI developer from Lviv. I use HTML5/ CSS3/ JavaScript/ JQuery latest technologies.</p>
-                    <p class="p2">I am constantly improving my technical and practical knowledge.</p>
-                    <!--</div>-->
-                </div>
-                <a class="btn_about" href="about">About me</a>
             </div>
 
             <div id="about" class="row about-block responsive-block">
@@ -98,6 +95,9 @@
                         </p>
                     </div>
                 </div>
+                <a href="#galery" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
             </div>
 
             <div id="galery" class="row galery-block responsive-block">
@@ -108,15 +108,14 @@
                 <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/4.jpg" alt="4.jpg"></div>
                 <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/5.jpg" alt="5.jpg"></div>
                 <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/6.jpg" alt="6.jpg"></div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/1.jpg" alt="1.jpg"></div>
-                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/2.jpg" alt="2.jpg"></div>
-                <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/3.jpg" alt="3.jpg"></div>
+                <a href="#contacts" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
             </div>
 
             <div id="contacts" class="row contacts-block responsive-block">
                 <h2 class="block-name">Contacts</h2>
-                <div class="col-lg-4">
+                <div class="col-lg-4 pull-left">
                     <p>In order to get in touch please Fill the form bellow. Thanks.</p>
                     <form method="post">
                         <div class="form-group">
@@ -133,8 +132,8 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-8">
-                    <ul>
+                <div class="col-lg-8 pull-right contacts-m-t">
+                    <ul class="pull-right">
                         <li><a href="#"><i class="fa fa-phone-square"></i> +380979147389</a></li>
                         <li><a href="#"><i class="fa fa-skype"></i> mosicka_lviv</a></li>
                         <li><a href="https://www.facebook.com/myroslava.pryadun"><i class="fa fa-facebook-square"></i> fb/myroslava.pryadun</a></li>

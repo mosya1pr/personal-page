@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     $(window).scroll(function(event)
     {
-
+    return false;
         currentScrollTop = $(window).scrollTop();
         currentScrollTopTime = event.timeStamp;
 
