@@ -13,6 +13,8 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/m_and_p.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/hover.css" />
     </head>
     <body>
         <div class="navbar navbar-fixed-top m-n">
@@ -46,12 +48,12 @@
             <div id="home" class="row top-block responsive-block">
                 <div class="background-efect">
                     <div class="col-lg-4 col-md-12 col-lg-offset-8 home_content">
-                        <h1 class="page-title elegantshadow">Myroslava Pryadun</h1>
+                        <h1 class="page-title  animated bounceInRight">Myroslava Pryadun</h1>
                         <br>
                         <p class="p1 m-t-xl">I am Web UI developer from Lviv. I use HTML5/ CSS3/ JavaScript/ JQuery latest technologies.</p>
                         <p class="p2">I am constantly improving my technical and practical knowledge.</p>
                     </div>
-                    <a class="btn btn_about efect" href="#about"><span data-hover="About me">About me</span></a>
+                    <a href="#about" class="btn btn_about hvr-buzz-out">About me</a>
                 </div>
             </div>
 
@@ -95,7 +97,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="#galery" class="btn btn-circle page-scroll">
+                <a href="#galery" class="btn btn-circle page-scroll animated pulse">
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
             </div>
@@ -108,24 +110,24 @@
                 <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/4.jpg" alt="4.jpg"></div>
                 <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/5.jpg" alt="5.jpg"></div>
                 <div class="col-lg-4 col-md-4 col-sm-6"><img src="src/6.jpg" alt="6.jpg"></div>
-                <a href="#contacts" class="btn btn-circle page-scroll">
+                <a href="#contacts" class="btn btn-circle page-scroll animated pulse">
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
             </div>
 
-            <div id="contacts" class="row contacts-block responsive-block">
-                <h2 class="block-name">Contacts</h2>
+            <div id="contacts" class="row contacts-block responsive-block background-efect">
+                <h2 class="block-name m-b-xxl">Contacts</h2>
                 <div class="col-lg-4 pull-left">
                     <p>In order to get in touch please Fill the form bellow. Thanks.</p>
-                    <form method="post">
+                    <form class="contacts-form" method="post" action="https://formspree.io/mosicka_rudky@ukr.net">
                         <div class="form-group">
-                            <input class="form-control" type="text" name="username">
+                            <input class="form-control" type="text" name="username" placeholder="Your name">
                         </div>
                         <div class="form-group">
-                            <input class="form-control" type="email" name="email">
+                            <input class="form-control" type="email" name="email" placeholder="Your email">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message"></textarea>
+                            <textarea class="form-control" name="message" placeholder="Type your message" rows="5"></textarea>
                         </div>
                         <div class="form-group">
                             <button class="btn btn-default" type="submit">Send</button>
@@ -143,6 +145,23 @@
             </div>
 
         </div><!-- /.container -->
+        
+        <div class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <p>Your message is send. Thank you.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        
         <!-- script references -->
         <script src="js/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>

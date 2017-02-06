@@ -2,6 +2,8 @@ $(document).ready(function () {
     var $winHeight = window.innerHeight;
 
     $('.responsive-block').attr('style', 'min-height: ' + $winHeight + 'px;');
+    $('.top-block').find('img').attr('style', 'max-height: ' + $winHeight + 'px;');
+    $('.contacts-block').find('img').attr('style', 'max-height: ' + $winHeight + 'px;');
 
     $(window).on('resize', function () {
         $winHeight = window.innerHeight;
@@ -10,11 +12,22 @@ $(document).ready(function () {
 
     var $page = $('html, body');
     $('a[href*="#"]').click(function () {
-//        var href = $.attr(this, 'href');
         $page.animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 700);
         return false;
+    });
+    
+    $('.contacts-form').on('submit', function() {
+        var form = $(this);
+        $.ajax({
+            url: form.attr('action'),
+            type: form.attr('method'),
+            data: form.serialize(),
+        });
+        $('.modal').modal();
+        form.trigger('reset');
+        return false; 
     });
 
     var tempScrollTop = 0;
@@ -22,7 +35,7 @@ $(document).ready(function () {
     var tempScrollTopTime = 0;
     var currentScrollTopTime = 0;
 
-    var way = 0; // направление
+    var way = 0;
 
     var current = '#home';
 

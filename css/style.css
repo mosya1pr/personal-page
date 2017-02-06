@@ -61,9 +61,6 @@ body a {
     font-size: 30px;
     font-weight: 700;
 }
-.responsive-block {
-    border-bottom: 1px solid #bebebe;
-}
 
 
 /* HOME BLOCK */
@@ -74,62 +71,21 @@ body a {
     color: #fff;
 }
 
-.top-block .btn_about.efect {
-    padding: 0;
-    display: inline-block;
-    outline: none;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    line-height: 30px;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    border: 0;
-  background: transparent;
-}
 .top-block .btn_about {
+    background-color: #000;
+    opacity: 0.4;
+    padding: 10px 20px;
     text-decoration: none;
+    border: 1px solid #000;
+    width: 150px;
     position: absolute;
     bottom: 10%;
     left: calc(50% - 75px);
 }
-.top-block .btn_about.efect span {
-    padding: 10px 20px;
-    width: 150px;
-    background-color: #000;
-    opacity: 0.4;
-    position: relative;
-    display: block;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
-    -webkit-transform-origin: 50% 0;
-    -ms-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+.btn_about:focus, .btn_about:hover {
+    color: #fff;
 }
-.top-block .btn_about.efect span:before {
-    padding: 10px 20px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    content: attr(data-hover);
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform-origin: 50% 0;
-    -ms-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-}
-.top-block .btn_about.efect:hover span {
-    -webkit-transform: rotateX(90deg) translateY(-22px);
-    transform: rotateX(90deg) translateY(-22px);
-}
+
 
 .about-block {
     color: #000;
@@ -256,7 +212,7 @@ body a {
 .btn-circle:hover {
     outline: 0;
     color: #fff;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.1);
 }
 .btn-circle:hover i.animated {
     -webkit-animation-name: pulse;
@@ -285,4 +241,11 @@ body a {
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
+}
+.m-b-xxl {
+    margin-bottom: 70px;
+}
+
+.modal {
+    color: #000;
 }
